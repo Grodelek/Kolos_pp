@@ -32,3 +32,6 @@ int main()
 
    return 0;
 }
+### Zadanie 4.Napisać program wczytujący ze standardowego wejścia tablicę x o elementach typu double oraz granice przedziału
+### [a,b], następnie przepisujący elementy tablicy x należące do przedziału [a,b] do tablicy y oraz wyznaczający wartość
+### maksymalną w tablicy y.
