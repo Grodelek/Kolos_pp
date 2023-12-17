@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int tab[20];
+    int tab2[20];
+    int czypodobne;
+    printf("Tablica1: \n");
+    for(int i=0;i<20;i++){
+        printf("Podaj liczbe  tab[%d]",i);
+        scanf("%d",&tab[i]);
+    }
+      for(int i=0;i<20;i++){
+        printf("Podaj liczbe  tab2[%d]",i);
+        scanf("%d",&tab2[i]);
+    }
+    printf("\n");
+    for(int i=20;i>0;i--){
+        if(tab[i] != tab2[20-1-i]){
+            czypodobne=0;
+        }else{
+            czypodobne=1;
+        }
+    }
+    printf("Czy tablica zawiera te same elementy ale odwrotnie :\n");
+    if(czypodobne ==1){
+        printf("Tak\n");
+    }else{
+    printf("Nie\n");
+    }
+   return 0;
+}
+
+
+
+#### Napisać program, który wczytuje dwa 20-elementowe ciągi liczb całkowitych do dwóch
+     tablic, a następnie sprawdza, czy jeden z nich zawiera te same elementy, co drugi, ale
+     w odwrotnej kolejności (odpowiedź „TAK” lub „NIE”).
